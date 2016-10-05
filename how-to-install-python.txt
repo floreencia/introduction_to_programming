@@ -1,0 +1,36 @@
+
+During the course, we will use python 3.x and the packages numpy, scipy, matplotlib, seaborn, ipython and the ipython-notebook.
+
+
+Linux
+------
+
+Use your favourite pachage manager to install: python3, python3-numpy, python3-scipy, python3-matplotlib, python3-seaborn, ipython3, ipython3-notebook
+Now, check if ipython notebook works by typing:
+ipython3 notebook
+If it does, open a new notebook and type
+import numpy
+import scipy
+import matplotlib.pylab
+Press shift+enter and see what happens. If nothing happens and no error appears, everything is fine.
+If the installation failed, if you don't have root privilege or if you prefer a local user installation, you can also try to install Anaconda as described below for Mac and Windows.
+
+
+
+Windows and Mac
+---------------
+
+Download the python 3.X installer from
+http://continuum.io/downloads 
+and follow the instructions there. 
+
+Anaconda also includes a graphical Launcher application that enables you to start IPython Notebook,
+IPython QTConsole, and Spyder with a single click. 
+On Mac, double click Launcher.app in your ~/anaconda directory. 
+On Windows, you’ll find Launcher in your Start Menu.
+
+Start the IPython Notebook and type:
+import numpy
+import scipy
+import matplotlib.pylab
+Press shift+enter and see what happens. If nothing happens and no error appears, everything is fine.

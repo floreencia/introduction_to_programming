@@ -27,16 +27,19 @@ Content
 -------
 
 ## Wednesday (26.10.)
+
 ### Intro (Frank)
 * what is python?
 * why python?
 * how to use python? (interactive interpreter, scripts/programs, notebooks) 
 * the python ecosystem (numpy, scipy, matplotlib, ...)
+
 ### Motivation (4 super cool things done w/ python)
 * Frank : 
 * Norma : 
 * Henrik : 
 * Flo :
+
 ### what are we gonna do in the following days
 * presentations
 * exercises
@@ -45,11 +48,14 @@ Content
 	* Norma : image processing
 	* Henrik : 
 	* Flo : 
+
 ### where to find the course material
 https://github.com/MPIDS/introduction_to_programming 
+
 ### time to try it (and solve installation problems if there are any) 
 
 ## Thursday (27.10)
+
 ### Basic programming concepts
 
 #### part 1
@@ -66,19 +72,23 @@ loops, functions, modules
 #### part n
 
 ## Tuesday (01.11.)
+
 ### Scientific programming w/ python, Part 1
 1. basic linear algebra
 2. scientific visualisation with matplotlib
 
 ## Monday (14.11.)
+
 ### Scientific programming w/ python, Part 2
 1. advanced numpy
 2. scipy
+
 ### Projects
 
 ## Tuesday (29.11), Thursday (01.12.) & Monday (05.12.)
 
 ### Projects 
+
 ### optional extra topics:
 
 * pandas
