@@ -1,14 +1,14 @@
 # Introduction to progamming with python
 
 
-WISE 2016-ENI
+WeSe 2016-ENI
 =============
 
 
 Dates
 -----
 
-26.10 | 10:45 - 12hrs : Motivation (**--> all**), what is python and why is it cool? --> Frank
+26.10 | 10:45 - 12:15hrs : Intro --> Frank, Motivation (**--> all**)
 
 27.10 | 14 - 18hr : Basic programming concepts => python's basic syntax --> Henrik
 
@@ -26,26 +26,31 @@ Dates
 Content
 -------
 
-### Motivation, what is python and why is it cool?
-* 4 super cool things done w/ python
-	* Frank : 
-	* Norma : 
+## Wednesday (26.10.)
+### Intro (Frank)
+* what is python?
+* why python?
+* how to use python? (interactive interpreter, scripts/programs, notebooks) 
+* the python ecosystem (numpy, scipy, matplotlib, ...)
+### Motivation (4 super cool things done w/ python)
+* Frank : 
+* Norma : 
+* Henrik : 
+* Flo :
+### what are we gonna do in the following days
+* presentations
+* exercises
+* projects (3 backup projects)
+	* Frank :  
+	* Norma : image processing
 	* Henrik : 
-	* Flo :
-* what and why python? (Frank)
-	* the ipython notebook
-	* scientific programming w/ python: np, plt, sp
-* what are we gonna do in the following days
-	* presentations
-	* exercises
-	* project (3 backup projects)
-		* Frank :  
-		* Norma : image processing
-		* Henrik : 
-		* Flo : 
+	* Flo : 
+### where to find the course material
+https://github.com/MPIDS/introduction_to_programming 
+### time to try it (and solve installation problems if there are any) 
 
-
-### Basic programming concepts (27.10)
+## Thursday (27.10)
+### Basic programming concepts
 
 #### part 1
 
@@ -60,17 +65,21 @@ loops, functions, modules
 .
 #### part n
 
-### Scientific programming w/python 
-
-#### Part 1 (31.10)
+## Tuesday (01.11.)
+### Scientific programming w/ python, Part 1
 1. basic linear algebra
 2. scientific visualisation with matplotlib
 
-#### Part 2 (14.11)
+## Monday (14.11.)
+### Scientific programming w/ python, Part 2
 1. advanced numpy
 2. scipy
+### Projects
 
-### Extra topics
+## Tuesday (29.11), Thursday (01.12.) & Monday (05.12.)
+
+### Projects 
+### optional extra topics:
 
 * pandas
 
