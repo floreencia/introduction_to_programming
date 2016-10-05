@@ -10,7 +10,7 @@ Dates
 
 26.10 | 10:45 - 12hrs : Motivation (**all**), what is python and why is it cool? (Frank)
 
-27.10 | 14 - 18hr : Intro to programming => python's basic syntax - Henrik
+27.10 | 14 - 18hr : Basic programming concepts => python's basic syntax - Henrik
 
 01.11 | 14 - 18hr : Scientific programming w/python (i) : basic numpy and matplotlib (Flo)
 
@@ -44,14 +44,14 @@ Content
 		* Henrik : 
 		* Flo : 
 
-### Introduction to python syntax (27.10)
+### Basic programming concepts (27.10)
 
 #### part 1
 
 data types, data containers, loading data
 
 #### part 2
-loops, functions
+loops, functions, modules
 .
 .
 .
