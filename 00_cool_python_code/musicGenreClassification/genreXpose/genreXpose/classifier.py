@@ -34,7 +34,7 @@ def train_model(X, Y, name, plot=False, outModelName= 'saved_model/model_ceps.pk
     """
     labels = np.unique(Y)
 
-    cv = ShuffleSplit(n=len(X), n_iterations=1, test_size=testSize, indices=True, random_state=0)
+    cv = ShuffleSplit(n=len(X), n_iter=1, test_size=testSize, random_state=0)
 
     train_errors = []
     test_errors = []
