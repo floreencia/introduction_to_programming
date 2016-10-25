@@ -15,16 +15,13 @@ print( configFile)
 execfile(configFile, config)
 
 GENRE_DIR = config["GENRE_DIR"]
-TEST_DIR = config["TEST_DIR"]
+
+#TEST_DIR = config["TEST_DIR"]
 GENRE_LIST = config["GENRE_LIST"]
 
 if GENRE_DIR is None or GENRE_DIR is "":
     print "Please set GENRE_DIR in config.cfg"
-    sys.exit(1)
-
-elif TEST_DIR is None or TEST_DIR is "":
-    print "Please set TEST_DIR in config.cfg" 
-    sys.exit(1)    
+    sys.exit(1) 
 
 elif GENRE_LIST is None or len(GENRE_LIST)==0:
     print "Please set GENRE_LIST in config.cfg" 
@@ -33,7 +30,7 @@ elif GENRE_LIST is None or len(GENRE_LIST)==0:
 else:
     print "Variables defined in config.cfg :"
     print "GENRE_DIR ==> ", GENRE_DIR
-    print "TEST_DIR ==> ", TEST_DIR
+    #print "TEST_DIR ==> ", TEST_DIR
     print "GENRE_LIST ==> "," || ".join(x for x in GENRE_LIST)
 
     
@@ -81,31 +78,27 @@ def convert_dataset_to_wav(file_name):
     print "Conversion time = ", (stop - start) 
 
 
-def plot_confusion_matrix(cm, genre_list_labels, name, title, outFig=None):
+def plot_confusion_matrix(cm, genre_list, name, title, n_digits_ticks=4 ):
     """
-    Plots confusion matrices.
-    Parameters
-    ----------
-    genre_list_labels : tick labels for the confusion matrix
-
+        Plots confusion matrices.
     """
     pylab.clf()
     pylab.matshow(cm, fignum=False, cmap='Blues', vmin=0, vmax=1.0)
     ax = pylab.axes()
-    ax.set_xticks(range(len(genre_list_labels)))
-    ax.set_xticklabels(genre_list_labels)
+    cm_ticks = ['%s'%item[:n_digits_ticks] for item in genre_list]
+    ax.set_xticks(range(len(genre_list)))
+    ax.set_xticklabels(cm_ticks)
     ax.xaxis.set_ticks_position("bottom")
-    ax.set_yticks(range(len(genre_list_labels)))
-    ax.set_yticklabels(genre_list_labels)
+    ax.set_yticks(range(len(genre_list)))
+    ax.set_yticklabels(cm_ticks)
     pylab.title(title)
     pylab.colorbar()
     pylab.grid(False)
     pylab.xlabel('Predicted class', fontsize = 20)
-    pylab.ylabel('True class', fontsize = 20)
+    pylab.ylabel('True class', fontsize = 20, rotation=90)
     pylab.grid(False)
     #pylab.show()
-    if not outFig: os.path.join(CHART_DIR, "confusion_matrix_%s.png" % name)
-    pylab.savefig( outFig, bbox_inches="tight")
+    pylab.savefig(os.path.join(CHART_DIR, "confusion_matrix_%s.png" % name), bbox_inches="tight")
 
 
 def plot_roc_curves(auc_score, name, tpr, fpr, label=None):

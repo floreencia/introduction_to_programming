@@ -10,13 +10,14 @@ from sklearn.cross_validation import ShuffleSplit
 from sklearn.linear_model.logistic import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from sklearn.externals import joblib
-from utils import GENRE_LIST, GENRE_DIR, TEST_DIR
+from utils import GENRE_LIST, GENRE_DIR #, TEST_DIR
 from utils import plot_confusion_matrix, plot_roc_curves
 from ceps import read_ceps, read_ceps_test
 
 genre_list = GENRE_LIST
+outModelName = '/home/florencia/python/pyCourses/introduction_to_programming/flosRepo/introduction_to_programming/00_cool_python_code/musicGenreClassification/genreXpose/genreXpose/saved_model/model_ceps.pkl'
 
-def train_model(X, Y, name, plot=False, outModelName= 'saved_model/model_ceps.pkl', testSize = 0.3):
+def train_model(X, Y, name, plot=False, outModelName=outModelName, testSize = 0.3):
     """
     train_model(vector, vector, name[, plot=False])
     Trains and saves model to disk.
@@ -94,7 +95,7 @@ def train_model(X, Y, name, plot=False, outModelName= 'saved_model/model_ceps.pk
     #save the trained model to disk
     if outModelName : joblib.dump(clf, outModelName)
     
-    return outModelName, np.mean(train_errors), np.mean(test_errors), np.asarray(cms)
+    return np.mean(train_errors), np.mean(test_errors), np.asarray(cms)
 
 
 if __name__ == "__main__":
