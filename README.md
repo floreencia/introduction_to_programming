@@ -38,7 +38,8 @@ Content
 * Frank : 
 * Norma : 
 * Henrik : 
-* Flo :
+* Flo : [Music Genre Classifier ](https://github.com/MPIDS/introduction_to_programming/tree/master/00_cool_python_code/musicGenreClassification)
+
 
 ### what are we gonna do in the following days
 * presentations
